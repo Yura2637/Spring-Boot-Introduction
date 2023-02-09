@@ -275,3 +275,69 @@ java.lang.UnsupportedOperationException: No language server has registered to ha
 	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:197)
 	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:168)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-09 16:52:42.500
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-09 16:52:42.500
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@369e14[org.springframework.tooling.boot.ls:1.14.0.201912170939(id=1031)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-09 16:52:42.500
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-09 16:52:48.882
+!MESSAGE Boot LS startup time from start to initialized: 6382ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-09 16:52:48.914
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.prHgLfbdisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-09 16:52:48.914
+!MESSAGE subscribing to classpath changes: sts4.classpath.prHgLfbd isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-09 16:52:48.914
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-09 16:52:48.914
+!MESSAGE subsribers = {sts4.classpath.prHgLfbd=クラスパス通知の送信(1578), sts4.classpath.zkaJJtYQ=クラスパス通知の送信(618)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-09 16:52:48.914
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-09 16:52:48.914
+!MESSAGE project spring_boot_introduction ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-09 16:52:48.914
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-09 16:52:48.914
+!MESSAGE Preparing classpath changed notification spring_boot_introduction
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-09 16:52:48.914
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.prHgLfbd => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-09 16:52:48.914
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-09 16:52:48.914
+!MESSAGE classpath=87 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-09 16:52:48.914
+!MESSAGE buffering callback sts4.classpath.prHgLfbd spring_boot_introduction false 87
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-09 16:52:48.914
+!MESSAGE executing callback sts4.classpath.prHgLfbd 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-09 16:52:48.946
+!MESSAGE executing callback sts4.classpath.prHgLfbd SUCCESS [終了しました]
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2023-02-09 17:14:55.983
+!MESSAGE Scanning for dialect help files on project dependencies
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2023-02-09 17:14:55.993
+!MESSAGE Help file found: Java8Time.xml
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2023-02-09 17:14:55.998
+!MESSAGE Help file found: Standard-Dialect.xml
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2023-02-09 17:14:56.014
+!MESSAGE Scanning complete.  Execution time: 31ms
