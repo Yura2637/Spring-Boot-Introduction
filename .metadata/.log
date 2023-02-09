@@ -224,3 +224,54 @@ java.lang.UnsupportedOperationException: No language server has registered to ha
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-09 10:36:10.635
 !MESSAGE executing callback sts4.classpath.aXvfXIhr SUCCESS [終了しました]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-09 16:14:36.000
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.aXvfXIhr
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-09 16:14:36.001
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.aXvfXIhr
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-09 16:14:36.002
+!MESSAGE subsribers = {sts4.classpath.zkaJJtYQ=クラスパス通知の送信(618)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-09 16:14:36.002
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.aXvfXIhr => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-09 16:17:47.923
+!MESSAGE Preparing classpath changed notification spring_boot_introduction
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-09 16:17:47.923
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-09 16:17:47.926
+!MESSAGE classpath=87 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-09 16:17:47.928
+!MESSAGE buffering callback sts4.classpath.zkaJJtYQ spring_boot_introduction false 87
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-09 16:17:47.928
+!MESSAGE Preparing classpath changed notification spring_boot_introduction
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-09 16:17:47.929
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-09 16:17:47.931
+!MESSAGE classpath=87 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-09 16:17:47.933
+!MESSAGE buffering callback sts4.classpath.zkaJJtYQ spring_boot_introduction false 87
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-09 16:17:47.934
+!MESSAGE executing callback sts4.classpath.zkaJJtYQ 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-09 16:17:47.934
+!MESSAGE executing callback sts4.classpath.zkaJJtYQ FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2023-02-09 16:17:47.934
+!MESSAGE 
+!STACK 0
+java.lang.UnsupportedOperationException: No language server has registered to handle command 'sts4.classpath.zkaJJtYQ'
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:42)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:197)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:168)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
