@@ -1,0 +1,14 @@
+package com.example.controller;
+
+
+@Controller
+@RequestMapping("/session")
+public class SessionController {
+
+	private Httpsession session;
+
+	@Autowired
+	public SessionController(HttpSession session) {
+		this.session = session;
+	}
+}
