@@ -27,7 +27,6 @@ public class EmployeeService {
         return employee;
     }
 
-
     public List<Employee> findAllEmployee() {
         // employeesテーブルのデータをemployeeオブジェクトにつめて全件取得する
         return this.employeeRepository.findAll();
