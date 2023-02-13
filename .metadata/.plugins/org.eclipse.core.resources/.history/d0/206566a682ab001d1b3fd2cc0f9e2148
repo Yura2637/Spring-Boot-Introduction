@@ -1,0 +1,17 @@
+/* 省略 */
+
+import java.util.List;
+import com.example.entity.Employee;
+
+@Service
+public class EmployeeService {
+
+    /* 省略 */
+
+    // 全件取得処理
+    // メソッド名はRepositoryの処理や最終的な返り値がわかるような名前にしましょう
+    public List<Employee> findAllEmployee() {
+        // employeesテーブルのデータをemployeeオブジェクトにつめて全件取得する
+        return this.employeeRepository.findAll();
+    }
+}

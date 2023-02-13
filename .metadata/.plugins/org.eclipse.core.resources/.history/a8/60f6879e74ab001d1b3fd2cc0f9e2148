@@ -1,0 +1,12 @@
+package com.example.service;
+
+@Service
+public class EmployeeService {
+
+	private final EmployeeRepository employeeRepository;
+
+	@Autowired
+	public EmployeeService(EmployeeRepositry employeeRepository) {
+		this.employeeRepository = employeeRepository;
+	}
+}

@@ -1,0 +1,25 @@
+/* 省略 */
+
+import java.util.List;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.example.entity.Employee;
+
+@Controller
+@RequestMapping("employee")
+public class EmployeeController {
+
+    /* 省略 */
+
+    @GetMapping("/list")
+    public String showList(Model model) {
+        // Serviceを呼び出し、Model属性にセットします
+        List<Employee> employees = this.employeeService.findAllEmployee();
+        model.addAttribute("employees", employees);
+        return "employee/list";
+    }
+}
