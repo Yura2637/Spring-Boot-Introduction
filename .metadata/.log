@@ -363,3 +363,195 @@ java.lang.NullPointerException
 	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:132)
 	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
 	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:34:23.798
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.prHgLfbd
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:34:23.799
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.prHgLfbd
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:34:23.800
+!MESSAGE subsribers = {sts4.classpath.zkaJJtYQ=クラスパス通知の送信(618)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:34:23.800
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.prHgLfbd => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:36:00.476
+!MESSAGE Preparing classpath changed notification spring_boot_introduction
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:36:00.477
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:36:00.485
+!MESSAGE classpath=111 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:36:00.490
+!MESSAGE buffering callback sts4.classpath.zkaJJtYQ spring_boot_introduction false 111
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:36:00.491
+!MESSAGE Preparing classpath changed notification spring_boot_introduction
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:36:00.491
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:36:00.500
+!MESSAGE classpath=111 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:36:00.503
+!MESSAGE buffering callback sts4.classpath.zkaJJtYQ spring_boot_introduction false 111
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:36:00.504
+!MESSAGE Preparing classpath changed notification spring_boot_introduction
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:36:00.504
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:36:00.508
+!MESSAGE classpath=111 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:36:00.511
+!MESSAGE buffering callback sts4.classpath.zkaJJtYQ spring_boot_introduction false 111
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:36:00.512
+!MESSAGE executing callback sts4.classpath.zkaJJtYQ 3 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:36:00.512
+!MESSAGE executing callback sts4.classpath.zkaJJtYQ FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2023-02-13 16:36:00.513
+!MESSAGE 
+!STACK 0
+java.lang.UnsupportedOperationException: No language server has registered to handle command 'sts4.classpath.zkaJJtYQ'
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:42)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:197)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:168)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:37:07.148
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:37:07.149
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@369e14[org.springframework.tooling.boot.ls:1.14.0.201912170939(id=1031)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:37:07.149
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:37:13.436
+!MESSAGE Boot LS startup time from start to initialized: 6284ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:37:13.463
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.RYtslPDOisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:37:13.465
+!MESSAGE subscribing to classpath changes: sts4.classpath.RYtslPDO isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:37:13.465
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:37:13.466
+!MESSAGE subsribers = {sts4.classpath.zkaJJtYQ=クラスパス通知の送信(618), sts4.classpath.RYtslPDO=クラスパス通知の送信(4867)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:37:13.466
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:37:13.466
+!MESSAGE project spring_boot_introduction ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:37:13.466
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:37:13.467
+!MESSAGE Preparing classpath changed notification spring_boot_introduction
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:37:13.467
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.RYtslPDO => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:37:13.467
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:37:13.470
+!MESSAGE classpath=111 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:37:13.473
+!MESSAGE buffering callback sts4.classpath.RYtslPDO spring_boot_introduction false 111
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:37:13.473
+!MESSAGE executing callback sts4.classpath.RYtslPDO 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:37:13.505
+!MESSAGE executing callback sts4.classpath.RYtslPDO SUCCESS [終了しました]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:38:03.765
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.RYtslPDO
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:38:03.766
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.RYtslPDO
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:38:03.766
+!MESSAGE subsribers = {sts4.classpath.zkaJJtYQ=クラスパス通知の送信(618)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:38:03.766
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.RYtslPDO => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:40:45.601
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:40:45.602
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@369e14[org.springframework.tooling.boot.ls:1.14.0.201912170939(id=1031)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:40:45.602
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:40:45.968
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:40:45.968
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@369e14[org.springframework.tooling.boot.ls:1.14.0.201912170939(id=1031)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:40:45.969
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:40:47.059
+!MESSAGE Boot LS startup time from start to initialized: 1088ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:40:47.079
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.gwottaydisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:40:47.080
+!MESSAGE subscribing to classpath changes: sts4.classpath.gwottayd isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:40:47.080
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:40:47.081
+!MESSAGE subsribers = {sts4.classpath.zkaJJtYQ=クラスパス通知の送信(618), sts4.classpath.gwottayd=クラスパス通知の送信(4901)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:40:47.081
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:40:47.081
+!MESSAGE project spring_boot_introduction ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:40:47.081
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:40:47.081
+!MESSAGE Preparing classpath changed notification spring_boot_introduction
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:40:47.082
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.gwottayd => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:40:47.082
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:40:47.085
+!MESSAGE classpath=111 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:40:47.086
+!MESSAGE buffering callback sts4.classpath.gwottayd spring_boot_introduction false 111
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:40:47.087
+!MESSAGE executing callback sts4.classpath.gwottayd 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-02-13 16:40:47.104
+!MESSAGE executing callback sts4.classpath.gwottayd SUCCESS [終了しました]
