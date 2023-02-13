@@ -1,0 +1,13 @@
+package com.example.controller;
+
+@Contoroller
+@RequestMapping("cookie")
+public class CookieController {
+
+	@GetMapping("/set")
+	@ResponseBody
+	public String set Cookie(@RequestParam String value, HttpServletResponse res) {
+		res.addCookie(new Cookie("test_cookie", value));
+		return "保存しました";
+	}
+}
