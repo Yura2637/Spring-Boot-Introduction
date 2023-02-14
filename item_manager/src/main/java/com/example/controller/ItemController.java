@@ -31,24 +31,22 @@ public class ItemController {
     // 商品一覧の表示
     @GetMapping
     public String index(Model model) {
-    	// データの疎通確認
-        List<Item> items = this.itemService.findAll();
-        // コンソールよりListの中身を確認する
-        System.out.println(items.toString());
+        List<Item> items = this.itemService.findByDeleteAtIsNull();
+        model.addAttribute("items",items);
         return "item/index";
     }
 
     // 商品登録ページ表示用
     @GetMapping("toroku")
     public String torokuPage(@ModelAttribute("itemForm") ItemForm itemForm) {
-        // 処理を追加
+        // templates\item\torokuPage.htmlを表示します
         return "item/torokuPage";
     }
 
     // 商品登録の実行
     @PostMapping("toroku")
     public String toroku(ItemForm itemForm) {
-        // 処理を追加
+        this.itemService.save(itemForm);
         return "redirect:/item";
     }
 
@@ -56,14 +54,17 @@ public class ItemController {
     @GetMapping("henshu/{id}")
     public String henshuPage(@PathVariable("id") Integer id, Model model
                              , @ModelAttribute("itemForm") ItemForm itemForm) {
-        // 処理を追加
+        Item item = this.itemService.findById(id);
+        itemForm.setName(item.getName());
+        itemForm.setPrice(item.getPrice());
+        model.addAttribute("id", id);
         return "item/henshuPage";
     }
 
     // 商品編集の実行
     @PostMapping("henshu/{id}")
-    public String henshu(@PathVariable("id") Integer id, @ModelAttribute("itemForm") ItemForm itemForm) {
-        // 処理を追加
+    public String henshu(@PathVariable("id") Integer id,ItemForm itemForm) {
+        this.itemService.update(id, itemForm);
 
         return "redirect:/item";
     }
@@ -71,7 +72,7 @@ public class ItemController {
     // 商品削除の実行
     @PostMapping("sakujo/{id}")
     public String sakujo(@PathVariable("id") Integer id) {
-        // 処理を追加
+        this.itemService.delete(id);
         return "redirect:/item";
     }
 
