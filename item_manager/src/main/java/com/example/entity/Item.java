@@ -31,6 +31,9 @@ public class Item {
     @Column(name = "CATEGORY_ID")
     private Integer categoryId;
 
+    @Column(name = "STOCK")
+    private Integer stock;
+
     public Integer getId() {
         return this.id;
     }
@@ -61,6 +64,13 @@ public class Item {
 
     public void setCategoryId(Integer categoryId) {
     	this.categoryId = categoryId;
+    }
+
+    public Integer getStock() {
+    	return this.stock;
+    }
+    public void setStock(Integer stock) {
+    	this.stock = stock;
     }
 
     @Column(name = "DELETE_AT")
